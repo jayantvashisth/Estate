@@ -15,7 +15,16 @@
 .navigation-container .navigation-left {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 60px;
+}
+
+.navigation-container .navigation-left .active {
+    color: #0866a1;
+    background-color: #acd2ea;
+    padding: 5px 7px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .navigation-container .navigation-left .manage-prop {

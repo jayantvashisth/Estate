@@ -7,6 +7,33 @@
     background-color: #FFFFFF;
     border-radius: 15px;
     border: 1px solid #DDDDDD;
+    position: relative;
+}
+
+.cards-container .popular {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    top: 163px;
+    background-color: #0979c9;
+    padding: 0px 10px;
+    border-radius: 0px 5px 5px 0px;
+    visibility: hidden;
+
+}
+
+.cards-container .popular span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
 }
 
 .cards-container .card-img {

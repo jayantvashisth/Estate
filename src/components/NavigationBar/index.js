@@ -8,7 +8,7 @@ function NaviationBar() {
                 <div className="logo">
                     <span>Estatery</span>
                 </div>
-                <span>Rent</span>
+                <span className='active'>Rent</span>
                 <span>Buy</span>
                 <div className="manage-prop">
                     <span>Mangae Property</span>

@@ -233,9 +233,23 @@ function Home() {
         type: "houses",
         name: "oberoi",
         img: house5
+    }, {
+        price: "2894",
+        location: "silicon valley",
+        date: "2023-02-26",
+        type: "bunglow",
+        name: "Taj Mehal",
+        img: house8
+    }, {
+        price: "2894",
+        location: "silicon valley",
+        date: "2023-02-26",
+        type: "flat",
+        name: "oberoi",
+        img: house2
     }]
 
-    const onClickSearch = () => {
+    const onClickSearch = () => {        //This function will update the selection state which helps in filtering the data
         setSelection({ ...selection, location: location, date: date, price: price, type: type })
     }
 
@@ -290,14 +304,14 @@ function Home() {
                     </div>
                     <button className="search" onClick={() => { onClickSearch() }}>Search</button>
                 </div>
-
+                {/* Here is the logic for filtering the data and then mapping the output array */}
                 <div className="card-container">
                     {data.filter((data, index) => {
                         return ((selection.location == "" || selection.location == data.location) && (selection.date == "" || selection.date == data.date) && (selection.type == "" || selection.type == data.type) && (selection.price == "" || (Number(data.price) >= Number(selection.price.substring(0, selection.price.indexOf("-"))) && Number(data.price) <= Number(selection.price.substring(selection.price.indexOf("-") + 1, selection.price.length)))))
                     }).map((data, index) => {
                         return (
                             <div className="row">
-                                <Card data={data} key={index} />
+                                <Card data={data} key={index} num={index} />
                             </div>
                         )
                     })}
