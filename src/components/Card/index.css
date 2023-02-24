@@ -1,0 +1,130 @@
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 370px;
+    /* border: 1px solid black; */
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid #DDDDDD;
+}
+
+.cards-container .card-img {
+    width: 100%;
+}
+
+.cards-container .card-img img {
+    width: 100%;
+    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
+    height: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cards-container .price {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+
+.cards-container .price .price-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 2px;
+}
+
+.cards-container .price .price-left span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #0979c9;
+}
+
+.cards-container .price .price-left p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #00C49A;
+}
+
+.cards-container .title {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    justify-content: left;
+}
+
+.cards-container .title span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #384455;
+    text-align: left;
+}
+
+.cards-container .title p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 4px;
+    /* identical to box height */
+
+
+    color: #00C49A;
+    text-align: left;
+}
+
+.cards-container .title .horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #DDDDDD;
+    margin-top: 10px;
+}
+
+.cards-container .card-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+
+.cards-container .card-footer .svg-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.cards-container .card-footer .svg-group span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #00C49A;
+}
